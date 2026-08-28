@@ -1,13 +1,11 @@
 export default defineNuxtConfig({
-  modules: ['eve/nuxt'],
+  modules: [],
 
   css: ['~/assets/css/main.css'],
 
   runtimeConfig: {
     public: {
-      // The eve agent's deployed URL (separate Vercel project)
-      // Set EVE_NUXT_PRODUCTION_ORIGIN in env to override in production
-      eveHost: '',
+      eveHost: process.env.EVE_NUXT_PRODUCTION_ORIGIN || '',
     },
   },
 

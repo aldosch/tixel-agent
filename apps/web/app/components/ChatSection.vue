@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { useEveAgent } from 'eve/vue';
+
 const config = useRuntimeConfig();
 const { data, status, send, error } = useEveAgent({
   host: config.public.eveHost || undefined,
