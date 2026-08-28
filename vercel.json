@@ -1,0 +1,7 @@
+{
+  "services": {
+    "web": { "root": ".", "framework": "nuxtjs" },
+    "eve": { "root": "agent", "framework": "eve", "buildCommand": "eve build" }
+  },
+  "rewrites": [{ "source": "/eve/v1/(.*)", "destination": { "service": "eve" } }]
+}
