@@ -1,36 +1,13 @@
 {
-  "name": "tixel-agent",
-  "version": "0.0.0",
-  "type": "module",
-  "imports": {
-    "#*": "./agent/*",
-    "#evals/*": "./evals/*"
-  },
+  "name": "tixel-monorepo",
+  "private": true,
   "scripts": {
-    "build": "nuxt build && eve build",
-    "deploy": "eve deploy",
-    "dev": "nuxt dev",
-    "eval": "eve eval",
-    "start": "nuxt start",
-    "typecheck": "nuxt typecheck",
-    "eve:dev": "eve dev",
-    "eve:build": "eve build"
-  },
-  "dependencies": {
-    "@nuxt/ui": "^4.11.0",
-    "@vercel/connect": "1.0.0",
-    "ai": "^7.0.58",
-    "eve": "^0.45.0",
-    "nuxt": "^4.5.2",
-    "vue": "^3.5.41",
-    "vue-router": "^5.2.0",
-    "zod": "4.4.3"
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "typecheck": "turbo typecheck"
   },
   "devDependencies": {
-    "@types/node": "24.x",
-    "typescript": "7.0.2"
+    "turbo": "^2.5.0"
   },
-  "engines": {
-    "node": "24.x"
-  }
+  "packageManager": "pnpm@10.0.0"
 }

@@ -1,5 +1,8 @@
 <script setup lang="ts">
-const { data, status, send, error } = useEveAgent();
+const config = useRuntimeConfig();
+const { data, status, send, error } = useEveAgent({
+  host: config.public.eveHost || undefined,
+});
 
 const input = ref('');
 const scrollContainer = ref<HTMLElement | null>(null);

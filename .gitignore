@@ -1,11 +1,11 @@
 node_modules
 .env*
-.eve
 .vercel
-.next
+.eve
 .output
+.nuxt
 .nitro
 dist
 .DS_Store
-.nuxt
 *.tsbuildinfo
+.turbo

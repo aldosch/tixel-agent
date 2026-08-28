@@ -7,4 +7,8 @@ export default eveChannel({
     localDev(),
     none(),
   ],
+  cors: {
+    origin: ["*"],
+    methods: ["GET", "POST", "OPTIONS"],
+  },
 });
