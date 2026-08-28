@@ -1,0 +1,65 @@
+:root {
+  --tixel-dark: #201313;
+  --tixel-dark-light: #2a1a1a;
+  --tixel-text: #333333;
+  --tixel-text-light: #666666;
+  --tixel-bg-light: #f7f7f7;
+  --tixel-bg-input: #f0f0f0;
+  --tixel-pink: #f17ed6;
+  --tixel-orange: #f7582a;
+  --tixel-yellow: #ffc802;
+  --tixel-border: #e5e5e5;
+  --tixel-white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Archivo', ui-sans-serif, system-ui, sans-serif;
+  color: var(--tixel-text);
+  background: var(--tixel-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Archivo Semi Expanded', 'Archivo', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+input {
+  font-family: inherit;
+}
+
+::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}

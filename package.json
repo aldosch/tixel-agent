@@ -7,17 +7,23 @@
     "#evals/*": "./evals/*"
   },
   "scripts": {
-    "build": "eve build",
+    "build": "nuxt build && eve build",
     "deploy": "eve deploy",
-    "dev": "eve dev",
+    "dev": "nuxt dev",
     "eval": "eve eval",
-    "start": "eve start",
-    "typecheck": "tsc"
+    "start": "nuxt start",
+    "typecheck": "nuxt typecheck",
+    "eve:dev": "eve dev",
+    "eve:build": "eve build"
   },
   "dependencies": {
+    "@nuxt/ui": "^4.11.0",
     "@vercel/connect": "1.0.0",
     "ai": "^7.0.58",
     "eve": "^0.45.0",
+    "nuxt": "^4.5.2",
+    "vue": "^3.5.41",
+    "vue-router": "^5.2.0",
     "zod": "4.4.3"
   },
   "devDependencies": {
@@ -27,5 +33,4 @@
   "engines": {
     "node": "24.x"
   }
-
 }
